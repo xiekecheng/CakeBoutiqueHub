@@ -4,19 +4,28 @@
     <view class="text-area">
       <text class="title">{{ title }}</text>
     </view>
+    <Banner></Banner>
   </view>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      title: 'Hello',
-    }
-  },
-  onLoad() {},
-  methods: {},
-}
+<script setup>
+import Banner from './component/Banner.vue';
+// import Banner from './component/Banner.vue';
+// // import { uni } from '@dcloudio/vite-plugin-uni';
+
+// import { getSysUrl} from '@/utils/http.js'
+// export default {
+//   data() {
+//     return {
+//       title: 'Hello',
+//     }
+//   },
+//   onLoad() {
+//     // getSysUrl()
+//     console.log(uni.getSystemInfoSync());
+//   },
+//   methods: {},
+// }
 </script>
 
 <style>
